@@ -27,7 +27,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+							"node_modules/bootstrap/dist/css/bootstrap.min.css",
+							"node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+							"node_modules/@fortawesome/fontawesome-free",
+							"node_modules/@okta/okta-signin-widget/dist/css/okta-sign-in.min.css"
             ],
             "scripts": []
           },
@@ -53,6 +57,14 @@
               ],
               "outputHashing": "all"
             },
+						"qa": {
+							"fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qa.ts"
+                }
+              ]
+						},
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -69,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angluar-ecommerce:build:production"
+            },
+						"qa": {
+              "browserTarget": "angluar-ecommerce:build:qa"
             },
             "development": {
               "browserTarget": "angluar-ecommerce:build:development"
