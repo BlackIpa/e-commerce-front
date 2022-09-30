@@ -1,3 +1,5 @@
+# Frontend for e-commerce app preapred during a Udemy course
+
 # AngluarEcommerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
